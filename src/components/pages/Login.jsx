@@ -1,4 +1,4 @@
-import React from 'react';
+﻿import React from 'react';
 import Router from 'react-router';
 import {Panel, Input, Button} from 'react-bootstrap';
 import { History } from 'history';
@@ -24,7 +24,8 @@ var LoginPage = React.createClass({
           <div className="row"> 
             <div className="col-md-4 col-lg-4 col-md-offset-4 col-lg-offset-4"> 
               <img src={require("../../common/images/flat-avatar.png")} className="user-avatar" /> 
-              <h1>Ani Theme <small>Free React.js Edition</small></h1> 
+              <h1>Secure Programming </h1> 
+              <big>Concept Inventory</big>
               <form role="form" onSubmit={this.handleLogin} className="ng-pristine ng-valid"> 
                 <div className="form-content"> 
                   <div className="form-group"> 

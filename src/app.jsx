@@ -1,27 +1,42 @@
+//~ import React from 'react';
+//~ import { render } from 'react-dom';
+//~ //import {Provider} from 'react-redux';
+//~ import { createHashHistory, useBasename } from 'history';
+//~ import { Router } from 'react-router';
+//~ import "./common/styles/app.less";
+//~ import NProgress from 'nProgress';
+
+
 import React from 'react';
 import { render } from 'react-dom';
 import { createHashHistory, useBasename } from 'history';
 import { Router } from 'react-router';
+import { createStore } from 'redux';
+import { Provider } from 'react-redux';
 import "./common/styles/app.less";
 import NProgress from 'nProgress';
+
+import RootReducer from './a_reducer/index'
 
 NProgress.configure({ showSpinner: false });
 
 const history = useBasename(createHashHistory)({
-   queryKey: false
+  queryKey: false
 })
 
 const rootRoute = {
   path: '/',
   component: require('./components/layouts/Base'),
   indexRoute: {component: require('./components/layouts/Dashboard')},
-  childRoutes: [ 
+  childRoutes: [
     {
       component: require('./components/layouts/Dashboard'),
       indexRoute: {component: require('./components/pages/dashboard/Overview')},
       childRoutes: [
         require('./components/pages/dashboard/Overview'),
-        require('./components/pages/dashboard/Reports')
+        require('./components/pages/dashboard/Reports'),
+        require('./components/pages/dashboard/ConceptMap'),
+        require('./components/pages/dashboard/Survey')
       ]
     },
     {
@@ -33,8 +48,12 @@ const rootRoute = {
   ]
 }
 
+const store = createStore(RootReducer);
+
 render(
-  <Router history={history} routes={rootRoute} />,
+  <Provider store={store}>
+    <Router history={history} routes={rootRoute} />
+  </Provider>,
   document.getElementById('app')
 )
 
@@ -96,7 +115,7 @@ render(
 //  * @param  {[Param]} params route params
 //  *
 //  * @return {Promise}        data containing responses mapped by route name
- 
+
 // /*
 // let fetchData = function(routes, params) {
 //   let data = {};
@@ -177,7 +196,7 @@ render(
 //  * @param  {[Param]} params route params
 //  *
 //  * @return {Promise}        data containing responses mapped by route name
- 
+
 // /*
 // let fetchData = function(routes, params) {
 //   let data = {};
