@@ -11,6 +11,7 @@ import Quiz from './multipleChoice/components/Quiz';
 import Result from './multipleChoice/components/Result';
 import logo from './multipleChoice/svg/logo.svg';
 import './multipleChoice/App.css';
+import './multipleChoice/index.css';
 
 export default class App extends Component {
 
@@ -135,26 +136,12 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
-        <div className="overview-page" key="overview">
-          <Link to="/dashboard/reports" className="pull-right btn btn-primary btn-outline btn-rounded">Reports</Link>
-          <h2>Overview <small>What is secure programming?</small></h2>
-          <Jumbotron>
-            <h1>Welcome!</h1> We help students get a better understanding of secure programming by illustrating interrelations between the concepts.
-            <br />
-
-            <br />
-            <p> <a className="btn btn-primary btn-lg btn-outline btn-rounded">Learn more</a> </p>
-          </Jumbotron>
+      <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Secure Prog Concept Quiz</h2>
         </div>
-
-        <div className="App">
-          <div className="App-header">
-            <img src={logo} className="App-logo" alt="logo" />
-            <h2>Secure Prog Concept Quiz</h2>
-          </div>
-          {this.state.result ? this.renderResult() : this.renderQuiz()}
-        </div>
+        {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
   }
