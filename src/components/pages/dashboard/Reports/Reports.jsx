@@ -36,7 +36,8 @@ var Buttons = React.createClass({
                   <input type="submit" value="Submit"></input>
               </form>
             </div>
-            {/* <p> <a className="btn btn-primary btn-lg btn-outline btn-rounded">Submit</a> </p> */}
+            {/* <p> <a href="#/dashboard/Reports" className="btn btn-primary btn-lg btn-outline btn-rounded">Submit</a> </p> */}
+
           </Jumbotron>
         </div>
       </div>

@@ -88,7 +88,7 @@ var HomePage = React.createClass({
                     <a href="#/dashboard/reports">User Feedback</a>
                   </li>
                   <li>
-                    <a href="">Contact Us</a>
+                    <a href="#/dashboard/Aboutus">Contact Us</a>
                   </li>
                 </ul>
               </div>
