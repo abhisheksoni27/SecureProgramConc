@@ -14,7 +14,7 @@ var Aboutus = React.createClass({
           {/* <i className="glyphicon glyphicon-dashboard bg-fade"></i> */}
           <Jumbotron>
             {/* <h1>About Us</h1> */}
-            <p>Details about our research team and connections</p>
+            <p><b>Details about our research team and connections</b></p>
             <h4>Administrative Institutions:</h4><br />
             This project is a collaboration among researchers at Purdue University, California State University Sacramento, University of California Davis, and California Polytechnic State University San Luis Obispo.<br /><br />
             <h4>Project Members:</h4><br />

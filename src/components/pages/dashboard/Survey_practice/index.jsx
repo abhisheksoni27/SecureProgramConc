@@ -1,12 +1,12 @@
 import NProgress from 'nProgress';
 
 module.exports = {
-  path: '/dashboard/Survey',
+  path: '/dashboard/Survey_practice',
   getComponent(location, cb) {
   	NProgress.start();
     require.ensure([], (require) => {
     	require('nProgress').done();
-      cb(null, require('./chooseSurvey'));
+      cb(null, require('./Survey'));
     });
   }
 }

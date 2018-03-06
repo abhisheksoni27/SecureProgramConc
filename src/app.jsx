@@ -37,7 +37,8 @@ const rootRoute = {
         require('./components/pages/dashboard/Reports'),
         require('./components/pages/dashboard/ConceptMap'),
         require('./components/pages/dashboard/Survey'),
-        require('./components/pages/dashboard/Aboutus')
+        require('./components/pages/dashboard/Aboutus'),
+        require('./components/pages/dashboard/Survey_practice')
       ]
     },
     {

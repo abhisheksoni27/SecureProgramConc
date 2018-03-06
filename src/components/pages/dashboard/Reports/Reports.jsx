@@ -13,7 +13,7 @@ var Buttons = React.createClass({
 
           {/* <i className="glyphicon glyphicon-dashboard bg-fade"></i> */}
           <Jumbotron>
-            <h1>Add Comments here</h1>
+            <h2>Add Comments here</h2>
             <p>You can give us your suggestions and feedback</p>
             <div class="container">
               <form action="action_page.php">
