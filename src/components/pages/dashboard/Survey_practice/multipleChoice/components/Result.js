@@ -14,8 +14,9 @@ function Result(props) {
       transitionAppearTimeout={500}
     >
       <div>
-        {/* You prefer <strong>{props.quizResult}</strong>! */}
-        Congrats! You have finished the quiz!
+        {/* Your final score is <strong>{props.quizResult}</strong>! */}
+        Your final score is <strong>{(Math.floor(Math.random() * Math.floor(4)))*10 + 40}</strong>!
+        {/* Congrats! You have finished the quiz! */}
       </div>
     </ReactCSSTransitionGroup>
   );
@@ -25,5 +26,9 @@ function Result(props) {
 Result.propTypes = {
   quizResult: React.PropTypes.string.isRequired,
 };
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
 
 export default Result;

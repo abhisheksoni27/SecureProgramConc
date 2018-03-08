@@ -20,8 +20,14 @@ class App extends Component {
       answersCount: {
         Nintendo: 0,
         Microsoft: 0,
-        Sony: 0
+        Sony: 0,
+        true: 0,
+        wrong1: 0,
+        wrong2: 0,
+        wrong3: 0,
+        wrong4: 0
       },
+      rightcount: 0,
       result: ''
     };
 
@@ -55,13 +61,14 @@ class App extends Component {
     return array;
   };
 
+
   handleAnswerSelected(event) {
     this.setUserAnswer(event.currentTarget.value);
 
     if (this.state.questionId < quizQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 300);
+        setTimeout(() => this.setNextQuestion(), 500);
     } else {
-        setTimeout(() => this.setResults(this.getResults()), 300);
+        setTimeout(() => this.setResults(this.getResults()), 500);
     }
   }
 
@@ -91,16 +98,22 @@ class App extends Component {
 
   getResults() {
     const answersCount = this.state.answersCount;
-    const answersCountKeys = Object.keys(answersCount);
+    const answersCountKeys = Object.keys(answersCount); //How many for each category, in out case, only ture and false will be good.
     const answersCountValues = answersCountKeys.map((key) => answersCount[key]);
     const maxAnswerCount = Math.max.apply(null, answersCountValues);
 
-    return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);
+    // return answersCountKeys.filter((key) => answersCount[key] === maxAnswerCount);//Find the category with the max count and return it.
+    console.log(this.state.answersCount.true);
+    alert(this.state.answersCount.true);
+    return answersCount['true'];
   }
 
   setResults(result) {
-    if (result.length === 1) {
-      this.setState({ result: result[0] });
+    console.log('setResults');
+    console.log(typeof result);
+    console.log(result);
+    if (result && result.length === 1) {
+      this.setState({ result: (result[0]/quizQuestions.length)*100 });
     } else {
       this.setState({ result: 'Undetermined' });
     }
@@ -133,6 +146,8 @@ class App extends Component {
           <h2>React Quiz</h2>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
+        {console.log(answersCount.right);
+        alert(answersCount.right);}
       </div>
     );
   }
