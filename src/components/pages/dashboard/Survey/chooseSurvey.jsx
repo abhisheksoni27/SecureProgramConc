@@ -19,12 +19,12 @@ export default class App extends Component {
       <div key="choose" className="reports-page">
         <div className="ng-scope">
           <Link to="/dashboard/overview" className="pull-right btn btn-primary btn-outline btn-rounded">Back to Overview</Link>
-          <h1>Survey <small>Secure Programming Concept Inventory Survey</small></h1>
+          <h1>Survey <small>Secure Programming Concept Inventory</small></h1>
 
           {/* <i className="glyphicon glyphicon-dashboard bg-fade"></i> */}
           <Jumbotron>
-            <h2>Questionair type</h2>
-            <p>Choose to take either a practice set or take an official quiz.</p>
+            <h2>Inventory type</h2>
+            <p>You can either take a practice test or complete the Inventory.</p>
             <div class="container">
               <form action="action_page.php">
                 {/* <label for="fname">First Name</label>
@@ -50,8 +50,8 @@ export default class App extends Component {
 
             {/* <p> <a href="#/dashboard/Survey_practice" className="submit_choosesurvey">Submit</a> </p> */}
             <form action="#/dashboard/Survey_practice">
-                <input type="submit" value="Go to Practice" />
-                <input type="submit" value=" Go to Quiz " />
+                <input type="submit" value="Practice Test" />
+                <input type="submit" value="  Inventory " />
             </form>
             <form action="#/dashboard/Survey_practice">
 
