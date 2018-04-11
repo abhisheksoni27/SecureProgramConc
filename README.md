@@ -1,16 +1,17 @@
-## Ani Theme rewritten in React.js
+## Secure Programming Concept Inventory Website
+This website is an online survey website for Secure Programming Concept Inventory.
 
-[![Join the chat at https://gitter.im/start-react/sb-admin-react](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/start-react/sb-admin-react?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+##Technical Framework
+- React.js
+- Redux
+- Firebase
 
-This project is a port of the famous [Free Ani AngularJS Theme](http://startangular.com/product/ani-theme/) to React.js Theme based on [Essential React](https://github.com/pheuter/essential-react) using ES6 & Webpack.
-
-Find out more [Free React.js and React Native Themes at StartReact.com](http://www.startreact.com/).
 
 ## Installation
 ####1. Clone this project or Download that ZIP file
 
 ```sh
-$ git clone https://github.com/start-react/ani-theme.git
+$ git clone https://github.com/yeziyqf/SecureProgramConc
 ```
 
 ####2.  Make sure you have [npm](https://www.npmjs.org/) installed globally
@@ -30,11 +31,6 @@ $ npm install
 $ npm start
 ```
 
-
-## Roadmap
-
-- Add sample AJAX calls and make the components more modular
-- Add chart examples
 
 
 ### Automation tools used
