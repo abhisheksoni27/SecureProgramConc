@@ -15,8 +15,8 @@ var Blank = React.createClass({
           <br />
           <p> <a className="btn btn-primary btn-lg btn-outline btn-rounded">Learn more</a> </p> */}
           <div>
-            <img src="https://lh3.google.com/u/0/d/1PeUZKH71YC-wTf_HairhC9kGn2pzqQnm=w1920-h949-iv1" height="600" /><br />
-            <img src="https://lh3.google.com/u/0/d/1HxIpuZJUzfgAQLsFN0FeZiT_NU-RtKsR=w1920-h619-iv1" height="80"/>
+            <img src="https://firebasestorage.googleapis.com/v0/b/prgrammingconcinvent.appspot.com/o/ConceptMapOld.png?alt=media&token=c8cd2ef3-d139-474e-99bf-5ee0e0f6f83b" height="600" /><br />
+            <img src="https://firebasestorage.googleapis.com/v0/b/prgrammingconcinvent.appspot.com/o/ConceptMapOld_label.png?alt=media&token=ee8fb39e-99b1-4a72-a52e-8a3a6d367455" height="80"/>
             <br />
             <b>Very Important</b><br />
 
