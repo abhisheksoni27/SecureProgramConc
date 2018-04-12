@@ -85,7 +85,7 @@ var HomePage = React.createClass({
                     <Link to="/dashboard/ConceptMap">Concept Map</Link>
                   </li>
                   <li>
-                    <Link to="/dashboard/Survey">Secure Programming Inventory</Link>
+                    <Link to="/dashboard/ChooseSurvey">Secure Programming Inventory</Link>
                   </li>
                   <li>
                     <a href="#/dashboard/reports">User Feedback</a>
