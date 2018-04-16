@@ -58,7 +58,7 @@ export default class App extends Component {
                 <input type="submit" value="  Inventory " />
             </form>
             <br />
-            <form action="#/dashboard/ChooseSurvey">
+            <form action="#/dashboard/Instructor">
                 <input type="submit" value="  Instructor " />
             </form>
 

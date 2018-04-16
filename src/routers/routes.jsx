@@ -13,6 +13,7 @@ import DashboardSurveyPage from "../components/pages/dashboard/Survey"
 import DashboardPracticePage from "../components/pages/dashboard/Survey_practice"
 import DashboardChooseSurveyPage from "../components/pages/dashboard/ChooseSurvey"
 import DashboardAboutusPage from "../components/pages/dashboard/Aboutus"
+import DashboardInstructorPage from "../components/pages/dashboard/Instructor"
 
 
 var Routes = React.createClass({
@@ -30,6 +31,7 @@ var Routes = React.createClass({
               <Route name="dashboard.survey" path="/Survey" handler={DashboardSurveyPage} />
               <Route name="dashboard.aboutus" path="/Aboutus" handler={DashboardAboutUsPage} />
               <Route name="dashboard.Survey_practice" path="/Survey" handler={DashboardPracticePage} />
+              <Route name="dashboard.Instructor" path="/Instructor" handler={DashboardInstructorPage} />
             </Route>
             <Route name="login" path="/login" handler={LoginPage} />
             <DefaultRoute name="default" handler={DashboardLayout} />
