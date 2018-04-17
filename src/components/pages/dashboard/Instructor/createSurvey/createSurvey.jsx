@@ -203,6 +203,7 @@ export default class App extends Component {
         <Jumbotron>
           <span>Questionair Type: </span>
           {this.renderButtonToolbar()}
+          <br />
           <span>Number of students:</span>
           {/* {this.renderInputColumn()} */}
           <input type="text" pattern="[0-9]*" />
