@@ -7,12 +7,12 @@ import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bo
 
 //For survey part
 import update from 'react-addons-update';
-import quizQuestions from './multipleChoice/api/quizQuestions';
-import Quiz from './multipleChoice/components/Quiz';
-import Result from './multipleChoice/components/Result';
-import logo from './multipleChoice/svg/logo.svg';
-import './multipleChoice/App.css';
-import './multipleChoice/index.css';
+import quizQuestions from '../multipleChoice/api/quizQuestions';
+import Quiz from '../multipleChoice/components/Quiz';
+import Result from '../multipleChoice/components/Result';
+import logo from '../multipleChoice/svg/logo.svg';
+import '../multipleChoice/App.css';
+import '../multipleChoice/index.css';
 
 export default class App extends Component {
 
