@@ -33,7 +33,9 @@ var Buttons = React.createClass({
                   <label for="subject">Details</label>
                   <textarea id="subject" name="subject" placeholder="Write something.." height="200"></textarea>
 
-                  <input type="submit" value="Submit"></input>
+                  {/* <input type="submit" value="Submit"></input> */}
+                  <Link to="/dashboard/overview" className="pull-left btn-lg btn-primary btn-outline btn-rounded">Submit</Link>
+                  <br /><br />
               </form>
             </div>
             {/* <p> <a href="#/dashboard/Reports" className="btn btn-primary btn-lg btn-outline btn-rounded">Submit</a> </p> */}
