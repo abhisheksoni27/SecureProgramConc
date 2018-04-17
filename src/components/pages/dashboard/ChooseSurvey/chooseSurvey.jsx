@@ -48,19 +48,19 @@ export default class App extends Component {
               </form>
             </div>
 
-            {/* <p> <a href="#/dashboard/Survey_practice" className="submit_choosesurvey">Submit</a> </p> */}
-            <form action="#/dashboard/Survey_practice">
-                <input type="submit" value="Practice Test" />
-                {/* <input type="submit" value="  Inventory " /> */}
-            </form>
-            <br />
-            <form action="#/dashboard/Survey">
-                <input type="submit" value="  Inventory " />
-            </form>
-            <br />
-            <form action="#/dashboard/Instructor">
-                <input type="submit" value="  Instructor " />
-            </form>
+            <div className="center-align-instructor">
+              {/* <p> <a href="#/dashboard/Survey_practice" className="submit_choosesurvey">Submit</a> </p> */}
+              <form className="center-align-instructor-element" action="#/dashboard/Survey_practice">
+                  <input type="submit" value="Practice Test" />
+                  {/* <input type="submit" value="  Inventory " /> */}
+              </form>
+              <form className="center-align-instructor-element" action="#/dashboard/Survey">
+                  <input type="submit" value="  Inventory " />
+              </form>
+              <form className="center-align-instructor-element" action="#/dashboard/Instructor">
+                  <input type="submit" value="  Instructor " />
+              </form>
+            </div>
 
           </Jumbotron>
         </div>

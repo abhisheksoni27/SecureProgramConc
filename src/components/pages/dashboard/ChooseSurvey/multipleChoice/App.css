@@ -18,3 +18,18 @@
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+.center-align-instructor {
+  align-items: center;
+  width: 100%;
+  overflow-x:hidden;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.center-align-instructor-element {
+  width: 32%;
+  float: left;
+  margin: 0 auto;
+  display:inline;
+}
