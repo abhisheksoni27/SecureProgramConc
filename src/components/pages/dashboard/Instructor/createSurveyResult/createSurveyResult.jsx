@@ -201,16 +201,14 @@ export default class App extends Component {
         </div>
 
         <Jumbotron>
-          <span>Questionair Type: </span>
-          {this.renderButtonToolbar()}
-          <span>Number of students:</span>
-          {/* {this.renderInputColumn()} */}
-          <input type="text" pattern="[0-9]*" />
-          <br /><span>Class ids:</span>
-          <input type="text" pattern="[0-9]*" />
-          {/* {this.renderInputColumn()} */}
+          <div className="center-align">
+            <h2>Questionair Code: </h2>
+            <br />
+            <h1>CS6739</h1>
+            <br/>
+            <span>Please send to students.</span>
+          </div>
         </Jumbotron>
-        <Link to="/dashboard/Instructor/createSurveyResult" className="pull-right btn btn-primary btn-outline btn-rounded">Submit</Link>
       </div>
     );
   }

@@ -49,3 +49,10 @@
   background-color: white;
   align-items: center;
 }
+
+
+.center-align {
+  width: 25%;
+  margin: 0 auto;
+  text-align: center;
+}
