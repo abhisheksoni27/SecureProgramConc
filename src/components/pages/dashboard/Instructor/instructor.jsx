@@ -178,7 +178,7 @@ export default class App extends Component {
             <tr>
               <th>#</th>
               <th>Concept</th>
-              <th>Accuracy</th>
+              <th>Score</th>
             </tr>
           </thead>
           <tbody>
@@ -257,8 +257,8 @@ export default class App extends Component {
           <thead>
             <tr>
               <th>#</th>
-              <th>Pre Accuracy</th>
-              <th>Post Accuracy</th>
+              <th>Pre Score</th>
+              <th>Post Score</th>
             </tr>
           </thead>
           <tbody>

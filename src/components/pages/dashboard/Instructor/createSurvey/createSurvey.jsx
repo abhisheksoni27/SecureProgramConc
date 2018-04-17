@@ -35,7 +35,7 @@ export default class App extends Component {
       result: ''
     };
 
-    this.BUTTONS = ['Default'];
+    this.BUTTONS = ['Single Test'];
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
     this.renderDropdownButton = this.renderDropdownButton.bind(this);
@@ -148,7 +148,7 @@ export default class App extends Component {
         title={title}
         key={i}
         id={`dropdown-basic-${i}`} >
-        <MenuItem eventKey="1">Signle Test</MenuItem>
+        <MenuItem eventKey="1">Single Test</MenuItem>
         <MenuItem eventKey="2">Pre & Post Test</MenuItem>
         {/* <MenuItem eventKey="3" active>
           Active Item
