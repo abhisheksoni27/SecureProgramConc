@@ -3,7 +3,7 @@ import { Link } from "react-router";
 import {Jumbotron} from 'react-bootstrap';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bootstrap";
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar, BootstrapTable, TableHeaderColumn, Table} from "react-bootstrap";
 
 //For survey part
 import update from 'react-addons-update';
@@ -33,6 +33,12 @@ export default class App extends Component {
       },
       result: ''
     };
+
+    this.products = {
+      id: 1,
+      name: 'John',
+      price: 90
+    }
 
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
   }
@@ -161,7 +167,129 @@ export default class App extends Component {
           </ul>
         </div>
 
-        {this.state.result ? this.renderResult() : this.renderQuiz()}
+        {/* <BootstrapTable data={ this.products }>
+          <TableHeaderColumn dataField='id' isKey>Product ID</TableHeaderColumn>
+          <TableHeaderColumn dataField='name'>Product Name</TableHeaderColumn>
+          <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
+        </BootstrapTable> */}
+
+        <Table striped bordered condensed hover>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Concept</th>
+              <th>Accuracy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Memory Leak</td>
+              <td>73%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Input Validation</td>
+              <td>64%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Bad Code</td>
+              <td>41%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Programming Development Evvironment</td>
+              <td>75%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>SWA Tools</td>
+              <td>32%</td>
+            </tr>
+          </tbody>
+        </Table>
+
+        <Table striped bordered condensed hover>
+          <thead>
+            <tr>
+              <th>std id</th>
+              <th>Name</th>
+              <th>class id</th>
+              <th>score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Macneil</td>
+              <td>2</td>
+              <th>58</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mark Lee</td>
+              <td>3</td>
+              <th>67</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Sophia Gupta</td>
+              <td>1</td>
+              <th>88</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>Jack Dawson</td>
+              <td>2</td>
+              <th>43</th>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>Dawn Ming</td>
+              <td>4</td>
+              <th>55</th>
+            </tr>
+          </tbody>
+        </Table>
+
+        <Table striped bordered condensed hover>
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Pre Accuracy</th>
+              <th>Post Accuracy</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>54%</td>
+              <td>79%</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>39%</td>
+              <td>60%</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>77%</td>
+              <td>84%</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>51%</td>
+              <td>66%</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>65%</td>
+              <td>49%</td>
+            </tr>
+          </tbody>
+        </Table>
+
       </div>
     );
   }
