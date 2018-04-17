@@ -1,3 +1,5 @@
+@import "~font-awesome/less/font-awesome.less";
+
 .App-logo {
   animation: spin infinite 20s linear;
   height: 80px;
