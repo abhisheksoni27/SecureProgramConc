@@ -3,17 +3,16 @@ import { Link } from "react-router";
 import {Jumbotron} from 'react-bootstrap';
 import Select from 'react-select';
 import 'react-select/dist/react-select.css';
-import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar, ButtonToolbar, Button, DropdownButton, NumericInput} from "react-bootstrap";
-
+import {Navbar, Nav, NavItem, NavDropdown, MenuItem, ProgressBar} from "react-bootstrap";
 
 //For survey part
 import update from 'react-addons-update';
-import quizQuestions from '../multipleChoice/api/quizQuestions';
-import Quiz from '../multipleChoice/components/Quiz';
-import Result from '../multipleChoice/components/Result';
-import logo from '../multipleChoice/svg/logo.svg';
-import '../multipleChoice/App.css';
-import '../multipleChoice/index.css';
+import quizQuestions from '../Instructor/multipleChoice/api/quizQuestions';
+import Quiz from '../Instructor/multipleChoice/components/Quiz';
+import Result from '../Instructor/multipleChoice/components/Result';
+import logo from '../Instructor/multipleChoice/svg/logo.svg';
+import '../Instructor/multipleChoice/App.css';
+import '../Instructor/multipleChoice/index.css';
 
 export default class App extends Component {
 
@@ -35,10 +34,7 @@ export default class App extends Component {
       result: ''
     };
 
-    this.BUTTONS = ['Default'];
-
     this.handleAnswerSelected = this.handleAnswerSelected.bind(this);
-    this.renderDropdownButton = this.renderDropdownButton.bind(this);
   }
 
   componentWillMount() {
@@ -140,41 +136,6 @@ export default class App extends Component {
     );
   }
 
-  // Drop down menu.
-  renderDropdownButton(title, i) {
-    return (
-      <DropdownButton
-        bsStyle={title.toLowerCase()}
-        title={title}
-        key={i}
-        id={`dropdown-basic-${i}`} >
-        <MenuItem eventKey="1">Signle Test</MenuItem>
-        <MenuItem eventKey="2">Pre & Post Test</MenuItem>
-        {/* <MenuItem eventKey="3" active>
-          Active Item
-        </MenuItem>
-        <MenuItem divider />
-        <MenuItem eventKey="4">Separated link</MenuItem> */}
-      </DropdownButton>
-    );
-  }
-
-
-  renderButtonToolbar() {
-    return (
-      <ButtonToolbar>
-        {this.BUTTONS.map(this.renderDropdownButton)}
-      </ButtonToolbar>
-    )
-  }
-
-
-  renderInputColumn() {
-    return (
-      <NumericInput/>
-    )
-  }
-
   render() {
     return (
       <div className="App">
@@ -186,31 +147,21 @@ export default class App extends Component {
         <div className="SubNavBar-title">
           <ul className="SubNavBar-module">
             <li>
-              <Link to="/dashboard/Instructor">Summary</Link>
+              <Link to="/dashboard/overview">Summary</Link>
             </li>
             <li>
-              <Link to="/dashboard/Instructor/createSurvey">Create a survey</Link>
+              <Link to="/dashboard/Instructor_createSurvey">Create a survey</Link>
             </li>
             <li>
-              <Link to="/dashboard/Survey_practice">Practice Questions</Link>
+              <Link to="/dashboard/overview">Practice Questions</Link>
             </li>
             <li>
-              <Link to="/dashboard/Survey">Take a survey</Link>
+              <Link to="/dashboard/overview">Take a survey</Link>
             </li>
           </ul>
         </div>
 
-        <Jumbotron>
-          <span>Questionair Type: </span>
-          {this.renderButtonToolbar()}
-          <span>Number of students:</span>
-          {/* {this.renderInputColumn()} */}
-          <input type="text" pattern="[0-9]*" />
-          <br /><span>Class ids:</span>
-          <input type="text" pattern="[0-9]*" />
-          {/* {this.renderInputColumn()} */}
-        </Jumbotron>
-        <Link to="/dashboard/reports" className="pull-right btn btn-primary btn-outline btn-rounded">Submit</Link>
+        {this.state.result ? this.renderResult() : this.renderQuiz()}
       </div>
     );
   }
