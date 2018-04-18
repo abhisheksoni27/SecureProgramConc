@@ -1,0 +1,23 @@
+center-align-login {
+  width: 40%;
+  text-align: center;
+  position: relative;
+}
+
+.center-align-instructor {
+  text-align: center;
+  position: relative;
+}
+
+.center-align-instructor-element {
+  display: inline-block;
+  margin: 15px;
+}
+
+h1 {
+  font-size: 45px;
+}
+
+h4 {
+  font-size: 21.5px;
+}
