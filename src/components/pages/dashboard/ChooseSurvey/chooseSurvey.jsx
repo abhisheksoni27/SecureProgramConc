@@ -50,9 +50,9 @@ export default class App extends Component {
               </div>
 
               <div className="center-align-instructor">
-                <Link to="/dashboard/Survey_practice" className="center-align-instructor-element btn-lg btn-primary btn-outline btn-rounded">Practice Test</Link>
-                <Link to="/dashboard/Survey" className="center-align-instructor-element btn-lg btn-primary btn-outline btn-rounded">Inventory</Link>
-                <Link to="/dashboard/Instructor" className="center-align-instructor-element btn-lg btn-primary btn-outline btn-rounded">Instructor</Link>
+                <Link to="/dashboard/Survey_practice" className="center-align-instructor-element btn-lg btn-primary btn-outline btn-rounded">The the pactice test</Link>
+                <Link to="/dashboard/Survey" className="center-align-instructor-element btn-lg btn-primary btn-outline btn-rounded">Take the Inventory</Link>
+                <Link to="/dashboard/Instructor" className="center-align-instructor-element btn-lg btn-primary btn-outline btn-rounded">Instructor Login</Link>
               </div>
             </center>
           </Jumbotron>
