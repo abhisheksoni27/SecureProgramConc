@@ -6,7 +6,7 @@ var Blank = React.createClass({
   render: function() {
     return (
       <div className="overview-map" key="ConceptMap">
-        <Link to="/dashboard/reports" className="pull-right btn btn-primary btn-outline btn-rounded">Reports</Link>
+        <Link to="/dashboard/Overview" className="pull-right btn btn-primary btn-outline btn-rounded">Back to Overview</Link>
         <h2>Concept Map <small>of secure programming</small></h2>
         <Jumbotron>
           <h4>A visualization chart for interrelations between secure programming concepts.</h4>

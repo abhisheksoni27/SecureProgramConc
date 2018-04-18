@@ -14,14 +14,18 @@ var Aboutus = React.createClass({
           {/* <i className="glyphicon glyphicon-dashboard bg-fade"></i> */}
           <Jumbotron>
             {/* <h1>About Us</h1> */}
-            <p><b>Details about our research team and connections</b></p>
-            <h4>Administrative Institutions:</h4><br />
-            This project is a collaboration among researchers at Purdue University, California State University Sacramento, University of California Davis, and California Polytechnic State University San Luis Obispo.<br /><br />
-            <h4>Project Members:</h4><br />
-            Project PI, Dr. Ida Ngambeki.<br />
-            Project co-PI Dr. Jun Dai.<br />
-            Project co-PI Dr. Matt Bishop.<br />
-            Dr. Phillip Nico at California Polytechnic State University San Luis Obispo will be remunerated as a project consultant.<br />
+            <span>This project is a collaboration among researchers at Purdue University, California State University Sacramento, University of California Davis, and California Polytechnic State University San Luis Obispo</span>
+
+            <br /><br />
+            <b><h4>Project Team</h4></b>
+            <b>Dr. Ida Ngambeki</b> is an Assistant Professor in the Department of Computer and Information Technology at Purdue University.
+            <br /><br />
+            <b>Dr. Matt Bishop</b> is a Professor in the Department of Computer Science at the University of California Davis.
+            <br /><br />
+            <b>Dr. Jun Dai</b> is an Assistant Professor in the Department of Computer Science at California State University Sacramento.
+            <br /><br />
+            <b>Dr. Phillip Nico</b> is a Professor in the Department of Computer Science and Software Engineering at California Polytechnic State University in San Luis Obispo.
+
 
             {/* <p> <a className="btn btn-primary btn-lg btn-outline btn-rounded">Submit</a> </p> */}
           </Jumbotron>

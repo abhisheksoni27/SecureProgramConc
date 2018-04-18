@@ -20,16 +20,65 @@
 }
 
 .center-align-instructor {
-  align-items: center;
-  width: 100%;
-  overflow-x:hidden;
-  margin: 0 auto;
+  /* align-items: center; */
+  text-align: center;
+  position: relative;
+  /* width: 53%; */
+  /* overflow-x:hidden; */
+  /* margin: 0 auto; */
 }
 
 .center-align-instructor-element {
+  background-color: transparent;
+  box-shadow: none;
+  outline: none;
+  display: inline-block;
+  margin: 5px;
+  /* transition: 0.25s; */
+}
+
+a.center-align-instructor-element:focus,
+a.center-align-instructor-element:active,
+a.center-align-instructor-element:focus:hover,
+a.center-align-instructor-element:active:focus,
+a.center-align-instructor-element:active:hover,
+a.center-align-instructor-element:hover,
+.btn-outline.btn-primary:hover {
+  background-color: #2089c9;
+  box-shadow: none;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: 0.25s;
+}
+
+.center-align-instructor-element-left {
   /* width: 32%; */
   float: left;
-  /* margin: 0 auto; */
+  /* margin: auto auto auto 0; */
+  margin: 0 30px;
+  /* display:inline; */
+}
+
+.center-align-instructor-element-center {
+  /* width: 32%; */
+  float: left;
+  /* margin: auto; */
   margin: 0 30px;
   display:inline;
+}
+
+.center-align-instructor-element-right {
+  /* width: 32%; */
+  float: left;
+  margin: auto 0 auto auto;
+  margin: 0 30px;
+  display:inline;
+}
+
+.button-margin-specify {
+  margin: 25px 20px 0 0;
+}
+
+.float-right {
+  float: right;
 }

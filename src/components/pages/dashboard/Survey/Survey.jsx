@@ -138,10 +138,14 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <div className="back-to-overview-btn">
+            <Link to="/dashboard/Overview" className="btn btn-primary btn-outline btn-rounded">Back to Overview</Link>
+          </div>
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Secure Programming Concept Quiz</h2>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
+        <br /><br />
       </div>
     );
   }

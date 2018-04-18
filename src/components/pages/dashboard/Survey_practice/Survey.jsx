@@ -1,4 +1,4 @@
-﻿import React, { PropTypes, Component } from 'react';
+import React, { PropTypes, Component } from 'react';
 import { Link } from "react-router";
 import {Jumbotron} from 'react-bootstrap';
 import Select from 'react-select';
@@ -68,9 +68,9 @@ export default class App extends Component {
     this.setUserAnswer(event.currentTarget.value);
 
     if (this.state.questionId < quizQuestions.length) {
-        setTimeout(() => this.setNextQuestion(), 300);
+      setTimeout(() => this.setNextQuestion(), 300);
     } else {
-        setTimeout(() => this.setResults(this.getResults()), 300);
+      setTimeout(() => this.setResults(this.getResults()), 300);
     }
   }
 
@@ -80,8 +80,8 @@ export default class App extends Component {
     });
 
     this.setState({
-        answersCount: updatedAnswersCount,
-        answer: answer
+      answersCount: updatedAnswersCount,
+      answer: answer
     });
   }
 
@@ -90,11 +90,11 @@ export default class App extends Component {
     const questionId = this.state.questionId + 1;
 
     this.setState({
-        counter: counter,
-        questionId: questionId,
-        question: quizQuestions[counter].question,
-        answerOptions: quizQuestions[counter].answers,
-        answer: ''
+      counter: counter,
+      questionId: questionId,
+      question: quizQuestions[counter].question,
+      answerOptions: quizQuestions[counter].answers,
+      answer: ''
     });
   }
 
@@ -138,10 +138,14 @@ export default class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
+          <div className="back-to-overview-btn">
+            <Link to="/dashboard/Overview" className="btn btn-primary btn-outline btn-rounded">Back to Overview</Link>
+          </div>
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Secure Programming Concept Practice Questions</h2>
         </div>
         {this.state.result ? this.renderResult() : this.renderQuiz()}
+        <br /><br />
       </div>
     );
   }
