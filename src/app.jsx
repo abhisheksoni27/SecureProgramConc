@@ -27,7 +27,8 @@ const history = useBasename(createHashHistory)({
 const rootRoute = {
   path: '/',
   component: require('./components/layouts/Base'),
-  indexRoute: {component: require('./components/layouts/Dashboard')},
+  // indexRoute: {component: require('./components/layouts/Dashboard')},
+  indexRoute: {component: require('./components/pages/Login')},
   childRoutes: [
     {
       component: require('./components/layouts/Dashboard'),
