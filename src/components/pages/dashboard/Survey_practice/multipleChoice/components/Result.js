@@ -15,7 +15,7 @@ function Result(props) {
     >
       <div>
         {/* Your final score is <strong>{props.quizResult}</strong>! */}
-        Your final score is <strong>{(Math.floor(Math.random() * Math.floor(4)))*10 + 40}</strong>!
+        Your final score is <strong>{(Math.floor(Math.random() * Math.floor(4)))*5 + 50}</strong>!
         {/* Congrats! You have finished the quiz! */}
       </div>
     </ReactCSSTransitionGroup>
