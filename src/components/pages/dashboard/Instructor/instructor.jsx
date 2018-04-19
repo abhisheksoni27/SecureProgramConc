@@ -264,41 +264,41 @@ export default class App extends Component {
               <td>1</td>
               <td>John Macneil</td>
               <td>2</td>
-              <th>58</th>
-              <th></th>
-              <th></th>
+              <td>58</td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>2</td>
               <td>Mark Lee</td>
               <td>3</td>
-              <th></th>
-              <th>80</th>
-              <th>75</th>
+              <td></td>
+              <td>80</td>
+              <td>75</td>
             </tr>
             <tr>
               <td>3</td>
               <td>Sophia Gupta</td>
               <td>1</td>
-              <th></th>
-              <th>60</th>
-              <th>65</th>
+              <td></td>
+              <td>60</td>
+              <td>65</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Jack Dawson</td>
               <td>2</td>
-              <th>43</th>
-              <th></th>
-              <th></th>
+              <td>43</td>
+              <td></td>
+              <td></td>
             </tr>
             <tr>
               <td>1</td>
               <td>Dawn Ming</td>
               <td>4</td>
-              <th></th>
-              <th>55</th>
-              <th>76</th>
+              <td></td>
+              <td>55</td>
+              <td>76</td>
             </tr>
           </tbody>
         </Table>
