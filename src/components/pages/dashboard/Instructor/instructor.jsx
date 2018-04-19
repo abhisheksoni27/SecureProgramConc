@@ -199,7 +199,7 @@ export default class App extends Component {
             </tr>
             <tr>
               <td>4</td>
-              <td>Programming Development Evvironment</td>
+              <td>Programming Development Environment</td>
               <td>75%</td>
             </tr>
             <tr>
@@ -213,52 +213,9 @@ export default class App extends Component {
         <Table striped bordered condensed hover>
           <thead>
             <tr>
-              <th>std id</th>
-              <th>Name</th>
-              <th>class id</th>
-              <th>score</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>1</td>
-              <td>John Macneil</td>
-              <td>2</td>
-              <th>58</th>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Mark Lee</td>
-              <td>3</td>
-              <th>67</th>
-            </tr>
-            <tr>
-              <td>3</td>
-              <td>Sophia Gupta</td>
-              <td>1</td>
-              <th>88</th>
-            </tr>
-            <tr>
-              <td>4</td>
-              <td>Jack Dawson</td>
-              <td>2</td>
-              <th>43</th>
-            </tr>
-            <tr>
-              <td>5</td>
-              <td>Dawn Ming</td>
-              <td>4</td>
-              <th>55</th>
-            </tr>
-          </tbody>
-        </Table>
-
-        <Table striped bordered condensed hover>
-          <thead>
-            <tr>
-              <th>#</th>
-              <th>Pre Score</th>
-              <th>Post Score</th>
+              <th>Question ID</th>
+              <th>Average Pre Score</th>
+              <th>Average Post Score</th>
             </tr>
           </thead>
           <tbody>
@@ -289,6 +246,64 @@ export default class App extends Component {
             </tr>
           </tbody>
         </Table>
+
+
+        <Table striped bordered condensed hover>
+          <thead>
+            <tr>
+              <th>Student ID</th>
+              <th>Student Name</th>
+              <th>Class ID</th>
+              <th>Score</th>
+              <th>Pre Test Score</th>
+              <th>Post Test Score</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>John Macneil</td>
+              <td>2</td>
+              <th>58</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mark Lee</td>
+              <td>3</td>
+              <th></th>
+              <th>80</th>
+              <th>75</th>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>Sophia Gupta</td>
+              <td>1</td>
+              <th></th>
+              <th>60</th>
+              <th>65</th>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Jack Dawson</td>
+              <td>2</td>
+              <th>43</th>
+              <th></th>
+              <th></th>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td>Dawn Ming</td>
+              <td>4</td>
+              <th></th>
+              <th>55</th>
+              <th>76</th>
+            </tr>
+          </tbody>
+        </Table>
+
+
 
       </div>
     );

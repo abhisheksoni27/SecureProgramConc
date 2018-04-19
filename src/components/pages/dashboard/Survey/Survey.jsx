@@ -139,7 +139,7 @@ export default class App extends Component {
       <div className="App">
         <div className="App-header">
           <div className="back-to-overview-btn">
-            <Link to="/dashboard/ChooseSurvey" className="btn btn-primary btn-outline btn-rounded">Choose Survey</Link>
+            <Link to="/dashboard/ChooseSurvey" className="btn btn-primary btn-outline btn-rounded">Exit Inventory</Link>
           </div>
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Secure Programming Concept Quiz</h2>

@@ -68,13 +68,16 @@ var HomePage = React.createClass({
             <div className="row">
               <div className="col-sm-3 col-md-2 sidebar">
                 <div className="text-center">
-                  <h2 className="brand"> Home <br /><small></small></h2>
-                  <img src={require("../../../common/images/flat-avatar.png")} className="user-avatar" />
+                  {/* <h2 className="brand"> Home <br /><small></small></h2> */}
+                  {/* <img src={require("../../../common/images/flat-avatar.png")} className="user-avatar" /> */}
                   <br />
-                  <Link to="/login" className="btn btn-white btn-outline btn-rounded btn-sm">Logout</Link>
+                  {/* <Link to="/login" className="btn btn-white btn-outline btn-rounded btn-sm">Home</Link> */}
                 </div>
 
                 <ul className="nav nav-sidebar">
+                  <li>
+                    <Link to="/login">Home</Link>
+                  </li>
                   <li>
                     <Link to="/dashboard/overview">Overview</Link>
                   </li>

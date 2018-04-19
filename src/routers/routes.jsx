@@ -39,7 +39,7 @@ var Routes = React.createClass({
             </Route>
             <Route name="login" path="/login" handler={LoginPage} />
             <DefaultRoute name="default" handler={DashboardLayout} />
-            <Redirect from="/" to="/login" />
+            <Redirect from="/" to="dashboard.overview" />
           </Route>
       );
     }
