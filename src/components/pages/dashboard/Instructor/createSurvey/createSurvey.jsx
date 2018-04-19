@@ -201,13 +201,13 @@ export default class App extends Component {
         </div>
 
         <Jumbotron>
-          <span>Questionair Type: </span>
+          <span>Questionnaire Type: </span>
           {this.renderButtonToolbar()}
           <br />
-          <span>Number of students:</span>
+          <span>Number of students: (Please enter the number of students you expect to take this test)</span>
           {/* {this.renderInputColumn()} */}
           <input type="text" pattern="[0-9]*" />
-          <br /><span>Class ids:</span>
+          <br /><span>Class ID: (Please enter a number that you will use to identify this class):</span>
           <input type="text" pattern="[0-9]*" />
           {/* {this.renderInputColumn()} */}
         </Jumbotron>

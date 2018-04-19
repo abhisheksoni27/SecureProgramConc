@@ -202,11 +202,11 @@ export default class App extends Component {
 
         <Jumbotron>
           <div className="center-align">
-            <h2>Questionair Code: </h2>
+            <h2>Questionnaire Code: </h2>
             <br />
             <h1>CS6739</h1>
             <br/>
-            <span>Please send to students.</span>
+            <span>Please send this code to students to login.</span>
           </div>
         </Jumbotron>
       </div>

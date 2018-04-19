@@ -159,10 +159,10 @@ export default class App extends Component {
               <Link to="/dashboard/Instructor/createSurvey">Create a survey</Link>
             </li>
             <li>
-              <Link to="/dashboard/Survey_practice">Practice Questions</Link>
+              <Link to="/dashboard/Survey_practice">View Practice Questions</Link>
             </li>
             <li>
-              <Link to="/dashboard/Survey">Take a survey</Link>
+              <Link to="/dashboard/Survey">Take the Inventory</Link>
             </li>
           </ul>
         </div>
@@ -173,12 +173,14 @@ export default class App extends Component {
           <TableHeaderColumn dataField='price'>Product Price</TableHeaderColumn>
         </BootstrapTable> */}
 
+        <div className = "separate"><big><b>Results by class:</b><br /></big></div>
         <Table striped bordered condensed hover>
           <thead>
             <tr>
               <th>#</th>
               <th>Concept</th>
               <th>Score</th>
+              <th>Suggested Resources</th>
             </tr>
           </thead>
           <tbody>
@@ -186,26 +188,31 @@ export default class App extends Component {
               <td>1</td>
               <td>Memory Leak</td>
               <td>73%</td>
+              <td></td>
             </tr>
             <tr>
               <td>2</td>
               <td>Input Validation</td>
               <td>64%</td>
+              <td></td>
             </tr>
             <tr>
               <td>3</td>
               <td>Bad Code</td>
               <td>41%</td>
+              <td></td>
             </tr>
             <tr>
               <td>4</td>
               <td>Programming Development Environment</td>
               <td>75%</td>
+              <td></td>
             </tr>
             <tr>
               <td>5</td>
               <td>SWA Tools</td>
               <td>32%</td>
+              <td></td>
             </tr>
           </tbody>
         </Table>
@@ -216,6 +223,8 @@ export default class App extends Component {
               <th>Question ID</th>
               <th>Average Pre Score</th>
               <th>Average Post Score</th>
+              <th>Most common misconception 1</th>
+              <th>Most common misconception 2</th>
             </tr>
           </thead>
           <tbody>
@@ -223,31 +232,42 @@ export default class App extends Component {
               <td>1</td>
               <td>54%</td>
               <td>79%</td>
+              <td>Keeping privileges constant without isolation</td>
+              <td>Elevating privileges unnecessarily</td>
             </tr>
             <tr>
               <td>2</td>
               <td>39%</td>
               <td>60%</td>
+              <td>Misunderstanding parameter type</td>
+              <td>Failing to check parameter type</td>
             </tr>
             <tr>
               <td>3</td>
               <td>77%</td>
               <td>84%</td>
+              <td>Ignoring missing data</td>
+              <td>Leaving missing data randomly scattered</td>
             </tr>
             <tr>
               <td>4</td>
               <td>51%</td>
               <td>66%</td>
+              <td>Failing to overwrite password with random data immediately after use</td>
+              <td></td>
             </tr>
             <tr>
               <td>5</td>
               <td>65%</td>
               <td>49%</td>
+              <td></td>
+              <td></td>
             </tr>
           </tbody>
         </Table>
 
-
+        <br />
+        <div className = "separate"><big><b>Results by student:</b></big></div>
         <Table striped bordered condensed hover>
           <thead>
             <tr>
@@ -261,23 +281,7 @@ export default class App extends Component {
           </thead>
           <tbody>
             <tr>
-              <td>1</td>
-              <td>John Macneil</td>
-              <td>2</td>
-              <td>58</td>
-              <td></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2</td>
-              <td>Mark Lee</td>
-              <td>3</td>
-              <td></td>
-              <td>80</td>
-              <td>75</td>
-            </tr>
-            <tr>
-              <td>3</td>
+              <td>101</td>
               <td>Sophia Gupta</td>
               <td>1</td>
               <td></td>
@@ -285,7 +289,23 @@ export default class App extends Component {
               <td>65</td>
             </tr>
             <tr>
+              <td>102</td>
+              <td>Dawn Ming</td>
+              <td>1</td>
+              <td></td>
+              <td>55</td>
+              <td>76</td>
+            </tr>
+            <tr>
+              <td>201</td>
+              <td>John Macneil</td>
               <td>2</td>
+              <td>58</td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td>202</td>
               <td>Jack Dawson</td>
               <td>2</td>
               <td>43</td>
@@ -293,12 +313,12 @@ export default class App extends Component {
               <td></td>
             </tr>
             <tr>
-              <td>1</td>
-              <td>Dawn Ming</td>
-              <td>4</td>
+              <td>303</td>
+              <td>Mark Lee</td>
+              <td>3</td>
               <td></td>
-              <td>55</td>
-              <td>76</td>
+              <td>80</td>
+              <td>75</td>
             </tr>
           </tbody>
         </Table>

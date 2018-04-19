@@ -54,7 +54,7 @@
 
 
 .center-align {
-  width: 25%;
+  width: 30%;
   margin: 0 auto;
   text-align: center;
 }
@@ -63,4 +63,9 @@
   width: 80%;
   margin: 0 auto;
   text-align: center;
+}
+
+.separate {
+  margin-top: 10px;
+  color: #2089c9;
 }
